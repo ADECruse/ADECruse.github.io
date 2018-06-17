@@ -1,0 +1,163 @@
+body {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  color: #4a4a4a;
+  background-color: #fdf9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+h2 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+p {
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2f2f2f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: #fdf9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #111;
+}
+
+.logo {
+    float: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid settings */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-template-areas:
+    "header header header"
+    "portfolio portfolio portfolio"
+    ". website ."
+    "about about about"
+    /* "skills skills skills" */
+    "frontend backend other"
+    "footer footer footer";
+
+
+}
+
+#item-a {
+  grid-area: header;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+#item-a h1 {
+  font-size: 4rem;
+}
+
+#item-a p {
+  font-size: 1.5rem;
+}
+#portfolio {
+  grid-area: portfolio;
+  color: #4a4a4a;
+}
+
+.website {
+  grid-area: website;
+  border-style: solid;
+}
+
+#about {
+  grid-area: about;
+  color: #4a4a4a;
+}
+
+/* .skills {
+  grid-area: skills;
+
+} */
+.frontend {
+  grid-area: frontend;
+
+
+}
+
+.backend {
+  grid-area: backend;
+
+}
+
+.other {
+  grid-area: other;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #2f2f2f;
+  height: 200px;
+  margin: 0;
+  color: #fdf9f9;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas:
+      "header header header"
+      "portfolio portfolio portfolio"
+      ". website ."
+      "about about about"
+      ". frontend ."
+      ". backend ."
+      ". other ."
+      "footer footer footer";
+
+
+  }
+}

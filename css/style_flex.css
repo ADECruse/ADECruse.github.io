@@ -18,6 +18,11 @@ h2 {
   color: #4a4a4a;
 }
 
+h4 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
 p {
   text-align: center;
   font-weight: lighter;
@@ -30,6 +35,10 @@ a {
 }
 
 /* Navigation Bar */
+
+nav {
+  margin-top: auto;
+}
 
 nav ul {
     list-style-type: none;
@@ -68,96 +77,108 @@ img {
     height: auto;
 }
 
-/* Grid settings */
+/* Flex settings */
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  grid-template-areas:
-    "header header header"
-    "portfolio portfolio portfolio"
-    ". website ."
-    "about about about"
-    /* "skills skills skills" */
-    "frontend backend other"
-    "footer footer footer";
-
-
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
 }
 
-#item-a {
-  grid-area: header;
+header {
   text-align: center;
   color: #4a4a4a;
 }
 
-#item-a h1 {
+header h1 {
   font-size: 4rem;
 }
 
-#item-a p {
+header p {
   font-size: 1.5rem;
 }
+
 #portfolio {
-  grid-area: portfolio;
   color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .website {
-  grid-area: website;
-  border-style: solid;
+  padding: 0.5rem;
 }
 
 #about {
-  grid-area: about;
   color: #4a4a4a;
 }
 
-/* .skills {
-  grid-area: skills;
+#about p {
+  text-align: left;
+}
 
-} */
+.skills {
+
+}
+
+.skills h3 {
+  text-align: center;
+}
+
 .frontend {
-  grid-area: frontend;
-
-
+  /* padding: 1rem; */
 }
 
 .backend {
-  grid-area: backend;
-
+  /* padding: 1rem; */
 }
 
 .other {
-  grid-area: other;
+  /* padding: 1rem; */
 }
 
 footer {
-  grid-area: footer;
   background-color: #2f2f2f;
   height: 200px;
   margin: 0;
+  padding-top: 0.5rem;
+  padding: 0.5rem 1rem 0 1rem;
   color: #fdf9f9;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
+  /* For Desktop */
   .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    grid-template-areas:
-      "header header header"
-      "portfolio portfolio portfolio"
-      ". website ."
-      "about about about"
-      ". frontend ."
-      ". backend ."
-      ". other ."
-      "footer footer footer";
+    justify-content: center;
+    margin: 0 20%;
+  }
 
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+  #skills {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .wrapper {
+    justify-content: center;
+  }
+
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #skills {
+    display: flex;
+    justify-content: space-around;
   }
 }

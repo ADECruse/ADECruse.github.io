@@ -23,6 +23,11 @@ h4 {
   color: #4a4a4a;
 }
 
+h5 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
 p {
   text-align: center;
   font-weight: lighter;
@@ -75,6 +80,12 @@ nav li a:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+#alanimg {
+  max-width: 75%;
+  border-style: solid;
+  border-width: medium;
 }
 
 /* Flex settings */
@@ -159,6 +170,16 @@ footer {
     justify-content: space-around;
   }
 
+  .website {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .website img {
+   min-width: 360px;
+ }
+
   #skills {
     display: flex;
     justify-content: space-around;
@@ -175,6 +196,17 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .website {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .website img {
+    min-width: 360px;
   }
 
   #skills {

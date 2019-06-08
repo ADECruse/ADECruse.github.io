@@ -3,7 +3,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #4a4a4a;
   background-color: #fdf9f9;
 }
@@ -11,21 +11,25 @@ body {
 h1 {
   text-align: center;
   color: #4a4a4a;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
   text-align: center;
   color: #4a4a4a;
+  font-family: 'Raleway', sans-serif;
 }
 
 h4 {
   text-align: center;
   color: #4a4a4a;
+  font-family: 'Raleway', sans-serif;
 }
 
 h5 {
   text-align: center;
   color: #4a4a4a;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -183,6 +187,12 @@ footer {
   #skills {
     display: flex;
     justify-content: space-around;
+  }
+
+  #alanimg {
+    max-width: 60%;
+    border-style: solid;
+    border-width: medium;
   }
 }
 

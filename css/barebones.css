@@ -112,6 +112,14 @@ html {
   */
 }
 
+/* My classes and IDs */
+
+#alanimg {
+  max-width: 75%;
+  border-style: solid;
+  border-width: medium;
+}
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

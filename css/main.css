@@ -128,7 +128,7 @@ html {
 /* Larger than mobile (default point when grid becomes active) */
 @media (min-width: 600px) {
   #banner {
-
+    align-items: flex-end;
   }
 }
 
@@ -222,7 +222,7 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #banner {
   height: 100vh;
-  background-image: url(/images/alan_budapest.jpeg);
+  background-image: url(https://res.cloudinary.com/cruse/image/upload/v1563040495/Alan%27s%20Portfolio/alan_budapest.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-origin: border-box;
@@ -232,7 +232,7 @@ footer {
 /* Larger than mobile (default point when grid becomes active) */
 @media (min-width: 600px) {
   #banner {
-    background-position: 0% 0%;
+    background-position: 60% 0%;
   }
 }
 
@@ -240,7 +240,7 @@ footer {
 @media (min-width: 900px) {
   #banner {
     background-position: 0% 45%;
-    background-image: url(/images/alan_budapest_large.jpeg);
+    background-image: url(https://res.cloudinary.com/cruse/image/upload/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
   }
 }
 
@@ -248,7 +248,7 @@ footer {
 @media (min-width: 1200px) {
   #banner {
     background-position: 0% 58%;
-    background-image: url(/images/alan_budapest_large.jpeg);
+    background-image: url(https://res.cloudinary.com/cruse/image/upload/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
   }
 }
 
@@ -261,16 +261,44 @@ footer {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center; 
   background-color: var(--background-color-opacity);
   margin: 0%;
-  padding: 5rem 25rem 5rem 5rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .content p {
   font-size: 2.6rem;
 }
+
+/* Larger than mobile (default point when grid becomes active) */
+@media (min-width: 600px) {
+  .content {
+    align-items: flex-start;
+    justify-content: center; 
+    padding: 5rem 5rem 5rem 5rem;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 900px) {
+  .content {
+    align-items: flex-start;
+    justify-content: center; 
+    padding: 5rem 15rem 5rem 5rem;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 1200px) {
+  .content {
+    align-items: flex-start;
+    justify-content: center; 
+    padding: 5rem 25rem 5rem 5rem;
+  }
+}
+
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

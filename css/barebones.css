@@ -45,7 +45,7 @@ html {
 	
   /* dark theme: light background, dark text, blue accent */
   --theme-hue: 0;					/* black */
-  --accent-hue: 194;			/* blue */
+  --accent-hue: 160;			/* blue */
 
   --text-color-richer: hsl(var(--theme-hue), 0%, 95%);		/* 		*/
   --text-color-normal: hsl(var(--theme-hue), 0%, 80%);		/* text color; button:hover:focus color */
@@ -60,6 +60,7 @@ html {
   --background-color: hsl(var(--theme-hue), 0%, 12%);			/* body background; textarea,select background */
   --background-color-softer: hsl(var(--theme-hue), 0%, 18%);
   --code-background: hsl(var(--theme-hue), 0%, 5%);				/* code background*/
+  --background-color-opacity: hsl(var(--theme-hue), 0%, 12%, 0.5); /* banner content text background */
 
   --button-primary-color: white;
   
@@ -122,28 +123,20 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh;
-  background-image: url(/images/alan_budapest.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-origin: border-box;
-  background-position: 35% 0%; */
 }
 
 /* Larger than mobile (default point when grid becomes active) */
 @media (min-width: 600px) {
   #banner {
-    /* background-position: 0% 0%; */
+
   }
 }
 
 /* Larger than phablet */
 @media (min-width: 900px) {
   #banner {
-    /* background-position: 0% 45%;
-    background-image: url(/images/alan_budapest_large.jpeg); */
     align-items: flex-end;
-    padding-right: 10rem;
+    /* padding-right: 10rem; */
 
   }
 }
@@ -151,10 +144,8 @@ html {
 /* Larger than tablet */
 @media (min-width: 1200px) {
   #banner {
-    /* background-position: 0% 58%;
-    background-image: url(/images/alan_budapest_large.jpeg); */
     align-items: flex-end;
-    padding-right: 20rem;
+    /* padding-right: 20rem; */
   }
 }
 
@@ -263,6 +254,22 @@ footer {
 
 #alanimg {
   max-width: 75%;  
+}
+
+/* Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+  background-color: var(--background-color-opacity);
+  margin: 0%;
+  padding: 5rem 25rem 5rem 5rem;
+}
+
+.content p {
+  font-size: 2.6rem;
 }
 
 /* Base Styles
@@ -409,9 +416,10 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
-  min-height: 65px;
+  min-height: 200px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  resize: none;}
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,

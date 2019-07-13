@@ -114,24 +114,55 @@ html {
   */
 }
 
-/* My classes and IDs */
+/* Flex
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#intro {
+#banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-image: url(/IMG_2546.jpg);
+  /* height: 100vh;
+  background-image: url(/images/alan_budapest.jpeg);
   background-size: cover;
-  background-clip: border-box;
+  background-attachment: fixed;
   background-origin: border-box;
-  /* background-position: center center; */
-  padding: 0;
+  background-position: 35% 0%; */
 }
 
-#alanimg {
-  max-width: 75%;  
+/* Larger than mobile (default point when grid becomes active) */
+@media (min-width: 600px) {
+  #banner {
+    /* background-position: 0% 0%; */
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 900px) {
+  #banner {
+    /* background-position: 0% 45%;
+    background-image: url(/images/alan_budapest_large.jpeg); */
+    align-items: flex-end;
+    padding-right: 10rem;
+
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 1200px) {
+  #banner {
+    /* background-position: 0% 58%;
+    background-image: url(/images/alan_budapest_large.jpeg); */
+    align-items: flex-end;
+    padding-right: 20rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -183,11 +214,56 @@ html {
 	
 }
 
+#portfolio {
+  /* order: 1; */
+}
+
+#about {
+  /* order: 1; */
+}
+
+#contact {
+  /* order: 1: */
+}
 
 
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#banner {
+  height: 100vh;
+  background-image: url(/images/alan_budapest.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-position: 35% 0%;
+}
 
+/* Larger than mobile (default point when grid becomes active) */
+@media (min-width: 600px) {
+  #banner {
+    background-position: 0% 0%;
+  }
+}
 
+/* Larger than phablet */
+@media (min-width: 900px) {
+  #banner {
+    background-position: 0% 45%;
+    background-image: url(/images/alan_budapest_large.jpeg);
+  }
+}
 
+/* Larger than tablet */
+@media (min-width: 1200px) {
+  #banner {
+    background-position: 0% 58%;
+    background-image: url(/images/alan_budapest_large.jpeg);
+  }
+}
+
+#alanimg {
+  max-width: 75%;  
+}
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

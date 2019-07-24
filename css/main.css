@@ -168,7 +168,7 @@ footer {
 	position: relative;
 	max-width: var(--grid-max-width);
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px 0;
 	text-align: center;
 	display: grid;
 	grid-gap: 20px;
@@ -183,7 +183,7 @@ footer {
 @media (min-width: 600px) {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
-		padding: 10px 0;
+		padding: 10px;
 	}
 	
 	/* basic grids */
@@ -320,6 +320,7 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }

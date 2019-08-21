@@ -240,7 +240,7 @@ footer {
 @media (min-width: 900px) {
   #banner {
     background-position: 0% 45%;
-    background-image: url(https://res.cloudinary.com/cruse/image/upload/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
+    background-image: url(https://res.cloudinary.com/cruse/image/upload/q_auto/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
   }
 }
 
@@ -248,7 +248,7 @@ footer {
 @media (min-width: 1200px) {
   #banner {
     background-position: 0% 58%;
-    background-image: url(https://res.cloudinary.com/cruse/image/upload/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
+    background-image: url(https://res.cloudinary.com/cruse/image/upload/q_auto/v1563039153/Alan%27s%20Portfolio/alan_budapest_large.jpg);
   }
 }
 

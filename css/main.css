@@ -577,7 +577,35 @@ hr {
   border-width: 0;
   border-top: 1px solid var(--border-color-softer); }
 
+/* Portfolio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+figure {
+  width: 40rem;
+}
+
+#easy-crypto {
+  order: 0;
+}
+
+#face-mask {
+  order: 1;
+}
+
+#thirty-fit {
+  order: 2;
+}
+
+#zero-waste {
+  order: 3;
+}
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

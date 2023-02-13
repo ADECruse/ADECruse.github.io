@@ -609,7 +609,7 @@ figure {
 
 /* Certificates
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.badges>img {
+.badges>a>img {
   width: 20%;
 }
 /* Clearing

@@ -388,7 +388,9 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: var(--text-color-normal);
   border-color: var(--text-color-softer);
-  outline: 0; }
+  outline: 0;
+  transition: 0.7s;
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -409,7 +411,9 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: var(--button-primary-color);
   background-color: var(--accent-color-hover);
-  border-color: var(--accent-color-hover); }
+  border-color: var(--accent-color-hover);
+  transition: 0.7s;
+}
 
 
 /* Forms

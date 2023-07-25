@@ -41,6 +41,7 @@
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="grid-container twelve">
     <header id="banner" class="">
       <section class="content">
         <h1><strong>Alan D. E. Cruse</strong></h1>
@@ -52,7 +53,7 @@
           <a href="https://www.instagram.com/alan_d_e_cruse/"
             ><i class="fab fa-instagram fa-2x"></i
           ></a>
-          <a href="https://www.linkedin.com/in/alan-cruse-737425256">
+          <a href="www.linkedin.com/in/alan-d-e-cruse-737425256">
             <i class="fab fa-linkedin fa-2x"></i>
           </a>
         </p>
@@ -63,9 +64,8 @@
       </section>
     </header>
 
-    <main class="grid-container full">
-      <hr />
-      <section id="about" class="">
+    <main class="grid-container twelve">
+      <section id="about" class="card">
         <!-- About me -->
         <h2>Über mich</h2>
         <!-- put a quote here from someone famous -->
@@ -103,8 +103,7 @@
           Nürnberg teil.
         </p>
       </section>
-      <hr />
-      <section id="portfolio" class="">
+      <section id="portfolio" class="card">
         <!-- My Portfolio -->
         <h2>Mein Portfolio</h2>
         <!-- A selection of my work -->
@@ -150,9 +149,7 @@
         </figure> -->
         </article>
       </section>
-
-      <hr />
-      <section id="skills">
+      <section id="skills" class="card">
         <h2>Meine Fähigkeiten und Kenntnisse</h2>
         <div class="grid-container halves u-align-left">
           <div class="">
@@ -204,8 +201,7 @@
         </div> -->
         </div>
       </section>
-      <hr />
-      <section id="certifcates">
+      <section id="certifcates" class="card">
         <h2>Meine Zertifikate</h2>
         <div class="badges">
           <a
@@ -229,9 +225,8 @@
           /></a>
         </div>
       </section>
-      <hr />
       <!-- contact form -->
-      <section id="contact" class="">
+      <section id="contact" class="card">
         <!-- Get in Contact -->
         <h2>Kontaktaufnahme</h2>
         <form
@@ -239,7 +234,7 @@
           action="https://formspree.io/info@alancruse.me"
           autocomplete="on"
         >
-          <div class="grid-container thirds">
+          <!-- <div class="grid-container thirds"> -->
             <div class="">
               <!-- First name -->
               <label>Vorname</label><br />
@@ -270,7 +265,7 @@
                 required
               />
             </div>
-          </div>
+          <!-- </div> -->
           <!-- Message -->
           <label>Nachricht</label><br />
           <textarea
@@ -290,6 +285,7 @@
     <!-- footer -->
     <footer>
       <!-- Back to the top -->
+      <div class="footer-wrapper">
       <a class="button" href="#banner">zurück nach oben</a>
       <p>
         <a href="https://github.com/ADECruse"
@@ -303,7 +299,9 @@
         </a>
       </p>
       <p id="copyright"></p>
+      </div>
     </footer>
+    </div>
 
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

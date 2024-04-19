@@ -64,7 +64,7 @@ h4 {
 }
 
 a {
-  color: var(--primary-color);
+  color: inherit;
   transition: color 0.3s ease;
 }
 
@@ -315,7 +315,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   /* border: 1px solid #ccc;
-  border-radius: 5px; */
+    border-radius: 5px; */
   overflow: hidden;
   grid-column: span 4;
   grid-row: 2;
@@ -333,7 +333,7 @@ a:hover {
 
 .card__image {
   /* max-width: 392px;
-  max-height: 221px; */
+    max-height: 221px; */
   width: 100%;
   margin: 0;
   border: 1px solid #ccc;
@@ -376,6 +376,23 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact__resume {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.icon-pdf {
+  color: var(--primary-color);
+  width: 24px;
+}
+
 /* Footer styles */
 .footer {
   text-align: center;
@@ -389,13 +406,13 @@ a:hover {
 }
 
 .footer__social a {
-    padding: 8px;
+  padding: 8px;
 }
 
 .button {
-    background-color: var(--primary-color);
-    height: 55px;
-    padding: 16px 32px;
-    color: #fff;
-    margin: 8px 0;
+  background-color: var(--primary-color);
+  height: 55px;
+  padding: 16px 32px;
+  color: #fff;
+  margin: 8px 0;
 }

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alan D. E. Cruse | Personal Page</title>
-    <!-- Your CSS files can be linked here -->
+    <title>Alan D. E. Cruse | Portfolio</title>
+    <meta
+      name="description"
+      content="Hallo! Ich bin ein Fullstack-Entwickler mit einem starken Fokus auf die Erstellung von leistungsstarken Shopify Stores."
+    />
+    <meta name="author" content="Alan D. E. Cruse" />
     <link rel="stylesheet" href="css/main-1.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -15,27 +19,24 @@
       <div class="header__left">
         <h1 class="header__title poppins-bold">Alan Cruse</h1>
         <p class="header__description">
-          Hello! I'm a Fullstack Developer with a strong focus on creating high-performing Shopify stores.
+          Hallo! Ich bin ein Fullstack-Entwickler mit einem starken Fokus auf
+          die Erstellung von leistungsstarken Shopify Stores.
         </p>
       </div>
       <nav class="header__nav">
-        <!-- Your navigation links can go here -->
         <ul class="nav__list">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">CV</a></li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#resume" class="nav__link">Lebenslauf</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Kontakt</a>
           </li>
         </ul>
       </nav>
-    </header> 
+    </header>
 
     <main class="main grid grid--12-col">
-      <!-- Your main content goes here -->
-      <section class="main__section">
-        <h2 class="section__title"></h2>
-        <p class="section__content"></p>
-      </section>
       <section id="work" class="main__section grid--12-col">
         <h2 class="section__title">My Work</h2>
         <div class="card">
@@ -47,7 +48,7 @@
           <div class="card__content">
             <h3 class="card__title">MK esthetics-med GmbH</h3>
             <p class="card__description">
-              A shopify store selling cosmetic products b2b
+             Versteht man sich für seine kosmetischen Bedürfnisse auf über 5000 Kunden. Mit mehr als einer Million verkauften Dermal Fillern hat das Unternehmen sich als führender Anbieter etabliert. Das Sortiment umfasst über 190 Produkte.
             </p>
             <a
               href="https://esthetics-med.de/"
@@ -58,13 +59,13 @@
         </div>
         <div class="card">
           <!-- <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="
-                images/drwendel-mobile-400w.jpeg 1x,
-                images/drwendel-mobile-800w.jpeg 2x
-              "
-            /> -->
+                    <source
+                    media="(max-width: 768px)"
+                    srcset="
+                    images/drwendel-mobile-400w.jpeg 1x,
+                    images/drwendel-mobile-800w.jpeg 2x
+                    "
+                    /> -->
           <img
             src="images/drwendel-1920w.jpeg"
             alt="Dr. Wendel Hair website thumbnail"
@@ -103,27 +104,28 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="main__section">
-        <h2 class="section__title">Contact Me</h2>
-        <script type="text/javascript">
-          document.write(
-            '<a href="mailto:' +
-              ["kontakt", "alancruse.me"].join("@") +
-              '">' +
-              ["kontakt", "alancruse.me"].join("@") +
-              "</a>"
-          );
-        </script>
+      <section class="main__section">
+        <h2 class="section__title"></h2>
         <p class="section__content"></p>
+      </section>
+      <section id="contact" class="main__section">
+        <h2 class="section__title">Kontaktaufnahme</h2>
+          <script type="text/javascript">
+            document.write(
+              '<a class="button" href="mailto:' +
+                ["kontakt", "alancruse.me"].join("@") +
+                '">' +
+                ["kontakt", "alancruse.me"].join("@") +
+                "</a>"
+            );
+          </script>
       </section>
     </main>
 
     <footer class="footer grid">
-      <!-- Your footer content goes here -->
       <p class="footer__copyright">© 2024 Alan D. E. Cruse</p>
     </footer>
 
-    <!-- Your JavaScript files can be linked here -->
-    <script src="scripts.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -8,4 +8,9 @@ fetch(`content_${lang}.json`)
 
     })
     .catch(error => console.error("Error loading content JSON:", error));
-    
+
+
+const copyright = document.querySelector('.footer__copyright');
+let getCurrentTime = new Date();
+let getCurrentYear = getCurrentTime.getUTCFullYear();
+copyright.textContent = `\u00A9 ${getCurrentYear} Alan D. E. Cruse`;

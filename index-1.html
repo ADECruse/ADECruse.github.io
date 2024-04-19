@@ -15,18 +15,20 @@
       <div class="header__left">
         <h1 class="header__title poppins-bold">Alan Cruse</h1>
         <p class="header__description">
-          Hello! I'm a Fullstack Developer specialzing in Shopify
+          Hello! I'm a Fullstack Developer with a strong focus on creating high-performing Shopify stores.
         </p>
       </div>
       <nav class="header__nav">
         <!-- Your navigation links can go here -->
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#" class="nav__link">CV</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </header> 
 
     <main class="main grid grid--12-col">
       <!-- Your main content goes here -->
@@ -34,59 +36,91 @@
         <h2 class="section__title"></h2>
         <p class="section__content"></p>
       </section>
-      <section class="main__section grid--12-col">
+      <section id="work" class="main__section grid--12-col">
         <h2 class="section__title">My Work</h2>
         <div class="card">
           <img
-            src="https://placehold.co/392x221"
-            alt="Card Image"
+            src="images/esthetics-med-1920w.png"
+            alt="MK Esthetics website thumbnail"
             class="card__image"
           />
           <div class="card__content">
-            <h3 class="card__title">Card Title</h3>
+            <h3 class="card__title">MK esthetics-med GmbH</h3>
             <p class="card__description">
-              This is a brief description of the card content. It can be longer
-              depending on your needs.
+              A shopify store selling cosmetic products b2b
             </p>
-            <a href="#" class="card__link">Read More</a>
+            <a
+              href="https://esthetics-med.de/"
+              class="card__link poppins-semibold"
+              >Visit Website</a
+            >
           </div>
         </div>
         <div class="card">
+          <!-- <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                images/drwendel-mobile-400w.jpeg 1x,
+                images/drwendel-mobile-800w.jpeg 2x
+              "
+            /> -->
           <img
-            src="https://placehold.co/392x221"
-            alt="Card Image"
+            src="images/drwendel-1920w.jpeg"
+            alt="Dr. Wendel Hair website thumbnail"
             class="card__image"
           />
+          <!-- </picture> -->
           <div class="card__content">
-            <h3 class="card__title">Card Title</h3>
+            <h3 class="card__title">Dr. Wendel: Hair</h3>
             <p class="card__description">
               This is a brief description of the card content. It can be longer
               depending on your needs.
             </p>
-            <a href="#" class="card__link">Read More</a>
+            <a
+              href="https://drwendelhair.de/"
+              class="card__link poppins-semibold"
+              >Visit Website</a
+            >
           </div>
         </div>
+
         <div class="card">
           <img
-            src="https://placehold.co/392x221"
-            alt="Card Image"
+            src="images/thesera-1920w.png"
+            alt="Thesera website thumbnail"
             class="card__image"
           />
           <div class="card__content">
-            <h3 class="card__title">Card Title</h3>
+            <h3 class="card__title">Thesera L</h3>
             <p class="card__description">
               This is a brief description of the card content. It can be longer
               depending on your needs.
             </p>
-            <a href="#" class="card__link">Read More</a>
+            <a href="https://thesera-l.de/" class="card__link poppins-semibold"
+              >Visit Website</a
+            >
           </div>
         </div>
+      </section>
+      <section id="contact" class="main__section">
+        <h2 class="section__title">Contact Me</h2>
+        <script type="text/javascript">
+          document.write(
+            '<a href="mailto:' +
+              ["kontakt", "alancruse.me"].join("@") +
+              '">' +
+              ["kontakt", "alancruse.me"].join("@") +
+              "</a>"
+          );
+        </script>
+        <p class="section__content"></p>
       </section>
     </main>
 
     <footer class="footer grid">
       <!-- Your footer content goes here -->
-      <p class="footer__copyright">© 2024 Your Website</p>
+      <p class="footer__copyright">© 2024 Alan D. E. Cruse</p>
     </footer>
 
     <!-- Your JavaScript files can be linked here -->

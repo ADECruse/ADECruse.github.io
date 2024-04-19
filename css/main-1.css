@@ -70,6 +70,11 @@ a {
 
 a:hover {
   color: var(--primary-color-light);
+  transition: color 0.3s ease;
+}
+
+a:active {
+    color: var(--primary-color-dark);
 }
 
 .grid {
@@ -332,8 +337,6 @@ a:hover {
 }
 
 .card__image {
-  /* max-width: 392px;
-    max-height: 221px; */
   width: 100%;
   margin: 0;
   border: 1px solid #ccc;
@@ -364,7 +367,11 @@ a:hover {
 
 .card__link {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: inherit;
+}
+
+.card__link:hover {
+  color: var(--primary-color-light);
 }
 
 .card--background {
@@ -415,4 +422,18 @@ a:hover {
   padding: 16px 32px;
   color: #fff;
   margin: 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-color-light);
+  transition: background-color 0.3s ease;
+}
+
+.button:active {
+    background-color: var(--primary-color-dark);
+}
+
+a.button:hover {
+  color: #fff;
 }

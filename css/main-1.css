@@ -416,6 +416,12 @@ a:active {
   padding: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer.grid {
+    flex-direction: column;
+  }
+}
+
 .button {
   background-color: var(--primary-color);
   height: 55px;

@@ -4,7 +4,7 @@ const lang = userLanguage.startsWith('de') ? 'de' : 'en';
 fetch(`content_${lang}.json`)
     .then(response => response.json())
     .then(data => {
-        document.querySelector('.header__description').textContent = data.header_description;
+        document.querySelector('.header__description').textContent = data.header_content;
 
     })
     .catch(error => console.error("Error loading content JSON:", error));

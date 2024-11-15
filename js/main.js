@@ -5,6 +5,8 @@ fetch(`content_${lang}.json`)
     .then(response => response.json())
     .then(data => {
         document.querySelector('.header__description').textContent = data.header_content;
+        document.querySelector('#thesera .card__description').textContent = data.thesera_content;
+        document.querySelector('#drwendel .card__description').textContent = data.drwendel_content;
 
     })
     .catch(error => console.error("Error loading content JSON:", error));
